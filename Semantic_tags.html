@@ -1,95 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basic Semantic HTML</title>
 </head>
 <body>
-<!-- SEMANTIC TAGS
+  <header>
+    <h1>Basic Semantic HTML</h1>
+    <p>Simple page using only HTML semantic and formatting tags.</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#notes">Notes</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    What is Semantic ?
-    Meaningful structure: Semantic elements like <header>, <nav>, <main>, <article>, <section>, <aside>, and <footer> clearly define the different parts of a web page and their function.
+  <main>
+    <section id="home">
+      <article>
+        <h2>Introduction</h2>
+        <p>This is a <strong>minimal</strong> example that shows semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
+        <p>Inline formatting: <em>emphasis</em>, <strong>strong</strong>, <small>small text</small>, <mark>highlight</mark>.</p>
+      </article>
 
-    <header> – Page or section introduction
-    <nav> – Navigation menu
-    <img> - Image Content
-    <main> – Main content
-    <section> – Logical grouping of content
-    <article> – Independent, self-contained content
-    <aside> – Side content (e.g., related links, ads)
-    <footer> – Footer information
-    <details> - This tag specifies additional details that the user can open and
-                close on demand.
-    <summary> -  This tag is used in conjunction with <details> to specify a    
-                visible heading for the details.
-   
-    <figcaption> - When you want to provide context or explanation for the IMAGE.
-    <figure>
-    <mark>
--->
-
-<header>
-    <h1>SEMANTIC ELEMENTS</h1>
-</header>
-
-<main>
-    <section>
-        <h2>Latest News</h2>
-        <p>​A legend, made: On D. Gukesh, the world’s youngest chess champion
-        </p>
-
-            <div style="text-align: center;">
-                <img src="images/Gugesh_ChessChampion.jpg" title="Chess champion" alt="loading">
-            </div>
-
-            <article>
-                <h3>Article Title 1</h3>      
-                <p>This is the content of the first article. Semantic tags help search engines and screen readers understand the structure of your content.</p>
-            </article>
-
-            <article>
-                <h3>Article Title 2</h3>
-                <p>This is the second article. Using <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code> improves readability and accessibility.</p>
-        </article>
+      <aside>
+        <h3>Tip</h3>
+        <p>Use semantic tags to improve accessibility and readability.</p>
+      </aside>
     </section>
 
-<!------------------->
-    <figure>
-        <img src="images/bird.jpg" alt="loading">
-        <figcaption>Fig.2 - Bird</figcaption>
-    </figure>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
 
-    <aside style="width: 33%; background-color: aqua; line-height:2;">
-        <h1>Make your best work yet</h1>
-        <em>
-        How? By signing up to receive tips, tricks, and offers designed to make you stand out.
-        Enter your email
-        <br>
-        <strong style="color: blue; font-size: 25px;">Sign Up</strong>
-        <br>
-        <mark>Unsubscribe at any time. Privacy Policy.</mark>
-        </em>
-    </aside>
-<!--
-The <details> tag specifies additional details that the user can open and close on demand.
--->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
 
-<details>
-  <summary>Express Avenue</summary>
-  <p>Express Avenue is a shopping mall in Chennai promoted by Express Infrastructure, A division of Express Newspapers Pvt. Ltd. which is ...
-</p>
-</details>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-    <nav>
-        <ul>
-            <li><a href="#">HTML5 Guide</a></li>
-            <li><a href="#">Semantic Elements</a></li>
-            <li><a href="#">Web Accessibility</a></li>
-        </ul>
-    </nav>
-</main>
-   
+    <section id="notes">
+      <h2>Notes</h2>
+      <p>Keyboard example: <kbd>Ctrl</kbd> + <kbd>S</kbd>. Quotation: <q>Keep HTML simple.</q></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 — Basic Semantic HTML Example</p>
+  </footer>
 </body>
 </html>
