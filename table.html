@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+     <style>
+        table, th, td {
+            border: 2px solid #333;
+            border-radius: 5px;
+             padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+       
+        td:hover {
+            background-color: #d9f46d; /* Light yellow on hover */
+        }
+        th:hover {
+            background-color: #eb863d; /* Light yellow on hover */
+        }
+        tr:nth-child(even) {
+            background-color: #95cdf5; /* Light blue for even rows */
+        }
+        tr:nth-child(odd) {
+            background-color: #a8eda8; /* Light blue for odd rows */
+        }
+    </style>
+</head>
+<body>
+    <h1>Creating a class Timetable</h1>
+    <table>
+        <tr style="background-color: rgb(254, 157, 220);">
+            <th colspan="10" >Class Time Table</th>
+        </tr>
+        <tr>
+            <th>Days</th>
+            <th>9:00 - 10:50</th>
+            <th>10:50 - 11:40</th>
+            <th>11:40 - 12:00</th>
+            <th>12:00 - 12:50</th>
+            <th>12:50 - 1:30</th>
+            <th>1:30 - 2:20</th>
+            <th>2:20 - 3:00</th>
+            <th>3:00 - 3:20</th>
+            <th>3:20 - 4:00</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td>Maths</td>
+            <td>Science</td>
+            <td rowspan="6" style="background-color: #e99f99;">Break</td>
+            <td>English</td>
+            <td rowspan="6" style="background-color: #e08a82;">Lunch</td>
+            <td>Geography</td>
+            <td>Art</td>
+            <td rowspan="6" style="background-color: #eeb7b1;">Tea Break</td>
+            <td>Physical Education</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td>History</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Music</td>
+            <td>Computer Science</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>English</td>
+            <td>Geography</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Art</td>
+            <td>Physical Education</td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <td>Physical Education</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Music</td>
+            <td>Science</td>
+            </tr>
+        <tr>
+            <th>Friday</th>
+            <td>Computer Science</td>
+            <td>Physical Education</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Geography</td>
+            <td>Maths</td>
+        </tr>
+        <tr>
+            <th>Saturday</th>
+            <td>Art</td>
+            <td>Computer Science</td>
+            <td>Physical Education</td>
+            <td>History</td>
+            <td>Science</td>
+            <td>Maths</td>
+            </tr>
+    </table>
+    
+</body>
+</html>
