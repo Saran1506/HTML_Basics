@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Example</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Element Selector */
+    p {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    /* Class Selector */
+    .intro {
+      font-style: italic;
+      color: #555;
+    }
+
+    .highlight {
+      background-color: yellow;
+      padding: 5px;
+    }
+
+    /* ID Selector */
+    #header {
+      text-align: center;
+      color: darkblue;
+    }
+
+    /* Grouping Selector */
+    .box, .highlight {
+      border: 2px solid black;
+      margin: 10px 0;
+    }
+
+    /* Descendant Selector */
+    .box p {
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="header">Welcome to CSS Styling</h1>
+
+  <p>This is a normal paragraph showing default styles.</p>
+
+  <p class="intro">This paragraph has the "intro" class, so it looks italic.</p>
+
+  <p class="highlight">This paragraph is highlighted with background color and padding.</p>
+
+  <div class="box">
+    <p>This content is inside a box with border and padding.</p>
+  </div>
+  <div class="box highlight">
+    <p>This content is inside a highlighted box with border and padding.</p>
+  </div>
+</body>
+</html>

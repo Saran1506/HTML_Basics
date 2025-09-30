@@ -1,0 +1,47 @@
+// ...existing code...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model Demo</title>
+  <style>
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: orange;
+  } 
+  a.highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }
+ div:hover {
+ background-color: blueviolet;
+ }
+
+ .box {
+  width: 300px;
+  background-color: lightcoral;
+  /* 1. Padding: Space between content and border */
+  padding: 25px;
+  /* 2. Border: The outline of the box */
+  border: 15px solid navy;
+  /* 3. Margin: Space outside the border */
+  margin: 20px;
+ }
+ </style>
+</head>
+<body>
+ <a href="forms.html">Go to Form</a>
+// ...existing code...
+ <a class="highlight" href="forms.html">Go to Form</a>
+ <br>
+ <div>Mouse over here</div>
+
+ <div class="box">
+  This is the content area. The padding is inside the border, and the margin is outside the border.
+ </div>
+</body>
+</html>
