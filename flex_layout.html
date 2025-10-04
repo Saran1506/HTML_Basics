@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Design</title>
+</head>
+<body style="margin: 0; font-family: sans-serif;">
+
+    <header style="
+        display: flex;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        height: 50px;
+        align-items: center; /* Vertically center text in the header */
+        justify-content: space-between; /* Push logo left, links right */
+    ">
+        <div style="font-size: 1.5em; font-weight: bold;">FLEX LOGO</div>
+        <nav>
+            <span style="margin-left: 20px;">Link 1</span>
+            <span style="margin-left: 20px;">Link 2</span>
+        </nav>
+    </header>
+
+    <div style="
+        display: flex;
+        min-height: calc(100vh - 120px); /* Fill most of the viewport height (minus header/footer) */
+        border: 1px dashed gray;
+    ">
+
+        <aside style="
+            background-color: #f0f0f0;
+            width: 200px;
+            padding: 15px;
+            /* Item properties: fixed size */
+            flex-shrink: 0;
+            flex-grow: 0;
+        ">
+            <h3>Sidebar Navigation</h3>
+            <p>Menu Item</p>
+            <p>Menu Item</p>
+        </aside>
+
+        <main style="
+            display: flex;
+            flex-direction: column; /* Stack content vertically inside main */
+            padding: 20px;
+            flex-grow: 1; /* Takes all remaining space */
+        ">
+            <h2 style="margin-top: 0;">Main Content Section</h2>
+
+            <div style="
+                display: flex;
+                height: 150px;
+                margin-bottom: 20px;
+                border: 2px solid #55a;
+                background-color: #e6e6ff;
+                /* Centering properties */
+                justify-content: center;
+                align-items: center;
+            ">
+                <span style="
+                    background-color: #55a;
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                ">
+                    Perfectly Centered Text
+                </span>
+            </div>
+
+            <h3>Responsive Grid (Flex Wrap)</h3>
+            <div style="
+                display: flex;
+                flex-wrap: wrap; /* Key property for grid layout */
+                gap: 10px;
+            ">
+                <div style="
+                    background-color: #ccf;
+                    padding: 15px;
+                    text-align: center;
+                    width: 150px; /* Base width */
+                    flex-grow: 1; /* Allows them to grow if space is available */
+                ">
+                    Card A
+                </div>
+                <div style="
+                    background-color: #ccf;
+                    padding: 15px;
+                    text-align: center;
+                    width: 150px;
+                    flex-grow: 1;
+                ">
+                    Card B
+                </div>
+                <div style="
+                    background-color: #ccf;
+                    padding: 15px;
+                    text-align: center;
+                    width: 150px;
+                    flex-grow: 1;
+                ">
+                    Card C
+                </div>
+                <div style="
+                    background-color: #ccf;
+                    padding: 15px;
+                    text-align: center;
+                    width: 150px;
+                    flex-grow: 1;
+                ">
+                    Card D
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer style="
+        background-color: #333;
+        color: #bbb;
+        text-align: center;
+        padding: 10px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    ">
+        © 2025 Inline Flex Design Example
+    </footer>
+
+</body>
+</html>
